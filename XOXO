@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+
+    int a, b;
+    int choice;
+    int result;
+
+    printf("1.ADD :\n");
+    printf("2.SUBTRACT :\n");
+    printf("3.PRODUCT :\n");
+
+    printf("\n Enter Your Choice :");
+    scanf("%d", &choice);
+    if(choice>3)
+        printf("bro that's the wrong number you will get an error anyway \n");
+
+    printf("Enter the First Number : ");
+    scanf("%d", &a);
+
+    printf("Enter the Second Number : ");
+    scanf("%d", &b);
+
+    switch(choice)
+    {
+        case 1:
+            result = a + b;
+            printf("The Sum of %d and %d is : %d", a, b, result);
+            break;
+
+        case 2:
+            result = a - b;
+            printf("The difference of %d and %d is : %d", a, b, result);
+            break;
+
+        case 3:
+            result = a * b;
+            printf("The product of %d and %d is : %d", a, b, result);
+            break;
+
+            default :
+                printf("ERROR 404");
+    }
+
+
+
+    return 0;
+}
